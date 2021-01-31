@@ -267,6 +267,42 @@
       "date": "",
       "time": "",
       "attendees": []
+    },
+    {
+      "id": 9627560,
+      "user": "Adam",
+      "category": "food",
+      "organizer": "Adam",
+      "title": "bibumavuluwu",
+      "description": "juzarejtosif",
+      "location": "Nujote",
+      "date": "",
+      "time": "7:00",
+      "attendees": []
+    },
+    {
+      "id": 883609,
+      "user": "Adam",
+      "category": "sustainability",
+      "organizer": "Adam",
+      "title": "owgotezpeftu",
+      "description": "pitbofkapted",
+      "location": "Nimbicom",
+      "date": "",
+      "time": "22:00",
+      "attendees": []
+    },
+    {
+      "id": 4270011,
+      "user": "Adam",
+      "category": "animal welfare",
+      "organizer": "Adam",
+      "title": "Puppy Picnic",
+      "description": "",
+      "location": "",
+      "date": "",
+      "time": "",
+      "attendees": []
     }
   ]
 }

@@ -36,35 +36,12 @@
 
 <script>
 export default {
-  computed: {
-    // ...mapState({
-    //   event: state => state.event.event
-    // }),
-  },
   props: {
-    // id: {
-    //   type: [Number, String],
-    //   required: true,
-    //   default: 1
-    // },
     event: {
       type: Object,
-      required: true 
+      required: true
     }
   }
-  // beforeRouteEnter(to, from, next) {
-  //   NProgress.start()
-  //   store.dispatch('event/fetchEvent', to.params.id).then(() => {
-  //     NProgress.done()
-  //     next()
-  //   })
-  // }
-  // methods: {
-  //   ...mapActions('event', ['fetchEvent'])
-  // },
-  // created() {
-  //   this.fetchEvent(this.id)
-  // }
 }
 </script>
 
