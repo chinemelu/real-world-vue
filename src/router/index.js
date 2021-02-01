@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import NProgress from 'nprogress'
-
 import store from '@/store'
 
 Vue.use(VueRouter)
@@ -38,6 +37,15 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ '../views/EventCreate.vue')
+  },
+  {
+    path: '/404',
+    name: '404',
+    component: () => import('../views/Notfound.vue')
+  },
+  {
+    path: '*',
+    redirect: { name: '404' }
   }
 ]
 
