@@ -303,6 +303,18 @@
       "date": "",
       "time": "",
       "attendees": []
+    },
+    {
+      "id": 863556,
+      "user": "Adam",
+      "category": "community",
+      "organizer": "Adam",
+      "title": "unabokoatake",
+      "description": "keplohnohfaa",
+      "location": "Fohlajum",
+      "date": "2021-02-03T16:04:00.000Z",
+      "time": "4:00",
+      "attendees": []
     }
   ]
 }

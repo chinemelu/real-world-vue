@@ -23,10 +23,19 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ '../views/EventShow.vue'),
     beforeEnter(to, from, next) {
-      store.dispatch('event/fetchEvent', to.params.id).then(event => {
-        to.params.event = event
-        next()
-      })
+      store
+        .dispatch('event/fetchEvent', to.params.id)
+        .then(event => {
+          to.params.event = event
+          next()
+        })
+        .catch(error => {
+          if (error.response && error.response.status === 404) {
+            next({ name: '404', params: { resource: 'event' } })
+          } else {
+            next({ name: 'network-issue' })
+          }
+        })
     }
   },
   {
@@ -41,11 +50,17 @@ const routes = [
   {
     path: '/404',
     name: '404',
-    component: () => import('../views/Notfound.vue')
+    component: () => import('../views/NotFound.vue'),
+    props: true
+  },
+  {
+    path: '/network-issue',
+    name: 'network-issue',
+    component: () => import('../views/NetworkIssue.vue')
   },
   {
     path: '*',
-    redirect: { name: '404' }
+    redirect: { name: '404', params: { resource: 'page' } }
   }
 ]
 
