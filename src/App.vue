@@ -2,7 +2,7 @@
   <div id="app">
     <navbar></navbar>
     <NotificationContainer />
-    <router-view :key="$route.fullPath"/>
+    <router-view :key="$route.fullPath" />
   </div>
 </template>
 
