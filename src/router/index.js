@@ -48,6 +48,10 @@ const routes = [
       import(/* webpackChunkName: "about" */ '../views/EventCreate.vue')
   },
   {
+    path: '/example',
+    component: () => import('../views/Example.vue')
+  },
+  {
     path: '/404',
     name: '404',
     component: () => import('../views/NotFound.vue'),
